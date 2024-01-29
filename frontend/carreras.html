@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <title>codeFast</title>
+  <link rel="icon" href="/frontend/imagenes/icon.svg" type="image/x-icon">
+
+</head>
+<body class="bg-yellow-50">
+<!-- Navbar -->
+<header class="mb-4 pb-2">
+  <nav class="bg-orange-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img class="h-8 w-auto" src="/frontend/imagenes/icon.svg" alt="Your Company">
+          </a>          
+        </div>
+        <!-- Icono de notificaciones -->
+        <div>
+          <div class="relative inline-block text-left">
+            <div>
+              <button type="button" class="inline-flex w-full justify-center gap-x-1.5 bg-orange-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm focus:outline-none" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <i class="fa-regular fa-bell"></i>
+              </button>
+            </div>
+            <!-- Menu de notificaciones -->
+            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1" role="none">
+                <p class="text-gray-700 px-4 py-2 text-sm">No tienes notificaciones</p>
+              </div>
+            </div>
+          </div>            
+          <!-- Carrito de compras -->
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <!-- Enlaces de la Navbar -->
+        <div class="hidden sm:block">
+          <div class="flex space-x-4">
+            <a href="index.html" class="text-black hover:bg-orange-300 hover:text-white px-3 py-2 text-base font-medium">Inicio</a>
+            <a href="carreras.html" class="text-black hover:bg-orange-300 hover:text-white px-3 py-2 text-base font-medium">Carreras</a>
+            <a href="registro.html" class="text-black hover:bg-orange-300 hover:text-white px-3 py-2 text-base font-medium">Registro</a>
+            <a href="sesion.html" class="text-black hover:bg-orange-300 hover:text-white px-3 py-2 text-base font-medium">Iniciar Sesión</a>
+          </div>
+        </div>
+        <!-- Botón de menú para dispositivos móviles -->
+        <div class="sm:hidden">
+          <button type="button" id="mobile-menu-button" class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu responsive -->
+    <div class="hidden sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 text-base font-medium">Inicio</a>
+        <a href="carreras.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 text-base font-medium">Carreras</a>
+        <a href="registro.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 text-base font-medium">Registro</a>
+        <a href="sesion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 text-base font-medium">Iniciar Sesión</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+      <!-- Carreras -->
+    <main>
+      <div class="grid grid-cols-1 sm:grid-cols-1   flex justify-center">
+        <div class="bg-yellow-50 p-4 rounded-lg">
+          <h6 class="text-5xl text-zinc-950 mb-8 font-bold flex justify-center">Elegí tu carrera</h6>
+          <h7 class="text-xl mt-8 font-bold flex justify-center">CARRERAS</h7>
+          <section>
+            <!-- Tarjetas con Información -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+  <!-- Tarjeta 1 -->
+  <div class="border-2 border-black p-4 rounded-lg">
+    <div class="border-b-2 border-orange-500 mb-4">
+      <p class="text-orange-500 font-semibold">Descuento del 70%: Aprende rápido, paga menos con codeFast. 💻💸</p>
+    </div>
+    <div class="ml-2">
+    <h2 class="text-xl font-bold mb-2 flex justify-center">Programador FullStack</h2>
+    <p class="text-gray-500">Incluye 3 cursos</p>
+    <ul>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Desarrollo Web Html y Css</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Javascript y Node.js</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Python</li>
+      <i class="fa-regular fa-calendar text-xs text-gray-500">32 semanas / 2 clases semanales de 2 h</i>
+    </ul>
+    </div>
+    <div class="mt-20">
+    <ul>
+      <li>Standard Plan $ 1.228.667 ARS</li>
+      <li>Descuento especial del 35%: ¡Ahorra $ 200.330 ARS</li>
+      <li>desde 6 cuotas sin interés de</li>
+      <li class="text-4xl mt-2 mb-4">$ 33.388 ARS</li>
+    </ul>
+    <button class="text-xl hover:bg-orange-200 border border-2 border-black rounded-lg bg-orange-200 mx-auto w-full">
+      <div class="flex justify-center">
+          Comprar
+      </div>
+    </button>
+    </div>
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="border-2 border-black p-4 rounded-lg">
+    <div class="border-b-2 border-orange-500 mb-4">
+      <p class="text-orange-500 font-semibold">Descuento del 70%: Aprende rápido, paga menos con codeFast. 💻💸</p>
+    </div>
+    <h2 class="text-xl font-bold mb-2 flex justify-center">Desarrollo UX/UI</h2>
+    <p class="text-gray-500">Incluye 3 cursos</p>
+    <ul>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Photoshop e Illustrator</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Diseño UX/UI</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Diseño UX/UI Avanzado</li>
+      <i class="fa-regular fa-calendar text-xs text-gray-500">40 semanas / 2 clases semanales de 2 h</i>
+    </ul>
+    <div class="mt-20">
+    <ul>
+      <li>Standard Plan $ 1.600.000 ARS</li>
+      <li>Descuento especial del 35%: ¡Ahorra $ 260.910 ARS</li>
+      <li>desde 6 cuotas sin interés de</li>
+      <li class="text-4xl mt-2 mb-4">$ 43.485 ARS</li>
+    </ul>
+    <button class="text-xl hover:bg-orange-200 border border-2 border-black rounded-lg bg-orange-200 mx-auto w-full">
+      <div class="flex justify-center">
+          Comprar
+      </div>
+    </button>
+    </div>
+  </div>
+  <!-- Tarjeta 3 -->
+  <div class="border-2 border-black p-4 rounded-lg">
+    <div class="border-b-2 border-orange-500 mb-4">
+      <p class="text-orange-500 font-semibold">Descuento del 70%: Aprende rápido, paga menos con codeFast. 💻💸</p>
+    </div>
+    <h2 class="text-xl font-bold mb-2 flex justify-center">Product Web</h2>
+    <p class="text-gray-500">Incluye 3 cursos</p>
+    <ul>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Product Manager</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Diseño UX/UI</li>
+      <li style="list-style-type: disc;" class="text-gray-500 ml-5">Desarrollo Web</li>
+      <i class="fa-regular fa-calendar text-xs text-gray-500">31 semanas / 2 clases semanales de 2 h</i>
+    </ul>
+    <div class="mt-20">
+    <ul>
+      <li>Standard Plan $ 1.171.333 ARS</li>
+      <li>Descuento especial del 35%: ¡Ahorra $ 191.035 ARS</li>
+      <li>desde 6 cuotas sin interés de</li>
+      <li class="text-4xl mt-2 mb-4">$ 31.839 ARS</li>
+    </ul>
+    <button class="text-xl hover:bg-orange-200 border border-2 border-black rounded-lg bg-orange-200 mx-auto w-full">
+      <div class="flex justify-center">
+          Comprar
+      </div>
+    </button>
+    </div>
+  </div>
+</section>
+        </div>
+      </div>
+<!-- Pregunta 1 -->
+<article class="flex justify-center items-center">
+  <div class="text-center">
+    <h5 class="text-6xl mt-8 font-semibold">Preguntas Frecuentes</h5>
+    <div class="faq-container">
+      <div class="faq-item">
+        <p class="faq-question mt-10 text-2xl font-semibold border-b border-black p-4 max-w-md relative">
+          ¿Qué validez tienen los cursos y carreras de codeFast?
+          <span class="toggle-answer absolute right-0 cursor-pointer">▼</span>
+          <div class="answer hidden p-4">
+            <p class="max-w-md">Los programas de cada uno de los cursos y carreras de codeFast son cocreados con empresas líderes en innovación de Latinoamérica como Bitso, Endeavor, Tiendanube, Pedidos Ya, Aerolab, R/GA, Digifianz, entre otras. Esto nos permite tener nuestros contenidos actualizados y avalados por referentes de la industria.</p>
+          </div>
+        </p>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="faq-item">
+        <p class="faq-question mt-10 text-2xl font-semibold border-b border-black p-4 max-w-md relative">
+          ¿Cuál es la duración de los cursos en codeFast?
+          <span class="toggle-answer absolute right-0 cursor-pointer">▼</span>
+          <div class="answer hidden p-4">
+            <p class="max-w-md">La duración de los cursos en codeFast varía según el programa específico. Algunos cursos son intensivos y pueden durar unas pocas semanas, mientras que otros pueden extenderse durante varios meses. Te recomendamos revisar la información de cada curso en nuestro sitio web para obtener detalles específicos sobre la duración.</p>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+    </main>
+            <!-- Arranca footer -->  
+<footer class="bg-orange-300 text-white p-4 mt-8">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-4 mb-4">
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="font-serif">&copy; 2024 codeFast. Todos los derechos reservados.</p>
+      <div class="mt-4">
+        <form action="" method="">
+          <label for="email" class="sr-only">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" class="p-2 border border-gray-300 rounded">
+          <button type="submit" class="bg-white text-orange-300 px-4 py-2 rounded ml-2 hover:bg-gray-100">Suscribirse</button>
+        </form>
+        <p class="text-sm text-white mt-2">Recibe las últimas noticias y actualizaciones directamente en tu correo electrónico. ¡Suscríbete a nuestro boletín informativo!</p>
+      </div>
+    </div>
+  </footer>
+  <script src="respuestaCarreras.js"></script> 
+</body>
+</html>
