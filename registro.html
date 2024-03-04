@@ -18,9 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <title>codeFast</title>
-    <link rel="icon" href="/frontend/imagenes/icon.svg" type="image/x-icon" />
+    <link rel="icon" href="/imagenes/icon.svg" type="image/x-icon" />
   </head>
-
   <body class="bg-yellow-50">
     <!-- Navbar -->
     <header class="mb-4 pb-2">
@@ -31,7 +30,7 @@
               <a href="index.html">
                 <img
                   class="h-8 w-auto"
-                  src="/frontend/imagenes/icon.svg"
+                  src="/imagenes/icon.svg"
                   alt="Your Company"
                 />
               </a>
@@ -66,7 +65,7 @@
                 </div>
               </div>
               <!-- Carrito de compras -->
-              <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <!-- Enlaces de la Navbar -->
             <div class="hidden sm:block">
@@ -145,6 +144,91 @@
         </div>
       </nav>
     </header>
+    <!-- abre form para registro -->>
+    <main class="container mx-auto my-8 p-8 bg-yellow-50 shadow-lg rounded-lg">
+      <h1 class="text-3xl font-semibold mb-6 text-center">
+        Registro de Usuario
+      </h1>
+      <form action="" method="" class="space-y-4">
+        <div class="mx-auto max-w-md">
+          <label for="email" class="block text-gray-700 text-sm mb-1"
+            >Correo Electrónico:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input w-full mt-2"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
+        </div>
+        <div class="mx-auto max-w-md">
+          <label for="password" class="block text-gray-700 text-sm mb-1"
+            >Contraseña:</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-input w-full mt-2"
+            placeholder="Ingrese su contraseña"
+            required
+          />
+        </div>
+
+        <div class="mx-auto max-w-md">
+          <div class="flex items-center mt-4">
+            <label for="termsCheckbox" class="ml-2 text-gray-700 text-sm"
+              >Acepto los
+              <a
+                href="#"
+                id="showTermsLink"
+                class="text-blue-500 hover:underline"
+                >términos y condiciones</a
+              ></label
+            >
+          </div>
+        </div>
+        <!-- caja para terminos y condiciones -->
+        <div
+          id="modalContainer"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-md">
+            <h2 class="text-lg font-semibold mb-4 text-center">
+              Términos y Condiciones
+            </h2>
+            <p class="text-gray-700">
+              Ejemplo de términos y condiciones aquí. Puedes personalizar este
+              contenido según tus necesidades.
+            </p>
+            <div class="mt-4 flex justify-center space-x-4">
+              <button
+                id="acceptTermsButton"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+              >
+                Aceptar Términos
+              </button>
+              <button
+                id="closeTerms"
+                class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto max-w-md">
+          <button
+            type="submit"
+            class="bg-orange-300 text-white px-4 py-2 rounded hover:bg-orange-400 mt-4"
+          >
+            Registrar
+          </button>
+        </div>
+      </form>
+    </main>
     <footer class="bg-orange-300 text-white p-4 mt-8">
       <div class="container mx-auto text-center">
         <div class="flex justify-center space-x-4 mb-4">
@@ -188,5 +272,6 @@
         </div>
       </div>
     </footer>
+    <script src="terminos.js"></script>
   </body>
 </html>
