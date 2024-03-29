@@ -1,0 +1,27 @@
+[
+    {
+      "nombre": "Programador FullStack",
+      "descripcion": "Incluye 3 cursos: Desarrollo Web Html y Css, Javascript y Node.js, Python",
+      "duracion": "32 semanas / 2 clases semanales de 2 h",
+      "precio": 1228667,
+      "descuento": 200330,
+      "cuota": 33388
+    },
+    {
+      "nombre": "Desarrollo UX/UI",
+      "descripcion": "Incluye 3 cursos: Photoshop e Illustrator, Diseño UX/UI, Diseño UX/UI Avanzado",
+      "duracion": "40 semanas / 2 clases semanales de 2 h",
+      "precio": 1600000,
+      "descuento": 260910,
+      "cuota": 43485
+    },
+    {
+      "nombre": "Product Web",
+      "descripcion": "Incluye 3 cursos: Product Manager, Diseño UX/UI, Desarrollo Web",
+      "duracion": "31 semanas / 2 clases semanales de 2 h",
+      "precio": 1171333,
+      "descuento": 191035,
+      "cuota": 31839
+    }
+  ]
+  
